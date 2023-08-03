@@ -47,18 +47,18 @@ Sub PivotData(ByVal wsNum As Long, ByVal lastRow As Long, ByVal squadCol As Stri
 
     ' Dictionary to map Polish month names to month numbers
     Set monthDict = CreateObject("Scripting.Dictionary")
-    monthDict("styczeñ") = 1
+    monthDict("styczeÃ±") = 1
     monthDict("luty") = 2
     monthDict("marzec") = 3
-    monthDict("kwiecieñ") = 4
+    monthDict("kwiecieÃ±") = 4
     monthDict("maj") = 5
     monthDict("czerwiec") = 6
     monthDict("lipiec") = 7
-    monthDict("sierpieñ") = 8
-    monthDict("wrzesieñ") = 9
-    monthDict("paŸdziernik") = 10
+    monthDict("sierpieÃ±") = 8
+    monthDict("wrzesieÃ±") = 9
+    monthDict("paÅ¸dziernik") = 10
     monthDict("listopad") = 11
-    monthDict("grudzieñ") = 12
+    monthDict("grudzieÃ±") = 12
 
     ' Set source worksheet
     Set srcSheet = ThisWorkbook.Sheets(wsNum)
@@ -116,8 +116,8 @@ Sub PivotData(ByVal wsNum As Long, ByVal lastRow As Long, ByVal squadCol As Stri
         Name = CStr(srcSheet.Cells(i, Chr(Asc(squadCol) + 2)).Value) ' Convert cell content to a string
         monthYear = srcSheet.Cells(i, "H").Value
         
-        ' Skip if name is empty, equals 'Nazwisko i imiê', equals '-', or equals '0'
-        If Name = "" Or Name = "Nazwisko i imiê" Or Name = "-" Or Name = "0" Then
+        ' Skip if name is empty, equals 'Nazwisko i imiÃª', equals '-', or equals '0'
+        If Name = "" Or Name = "Nazwisko i imiÃª" Or Name = "-" Or Name = "0" Then
             GoTo NextRow
         End If
 
@@ -255,8 +255,8 @@ Sub PivotDataUnique(ByVal wsNum As Long, ByVal lastRow As Long, ByVal squadCol A
         Name = CStr(srcSheet.Cells(i, Chr(Asc(squadCol) + 2)).Value) ' Convert cell content to a string
 
 
-        ' Skip if name is empty, equals 'Nazwisko i imiê', equals '-', or equals '0'
-        If Name = "" Or Name = "Nazwisko i imiê" Or Name = "-" Or Name = "0" Then
+        ' Skip if name is empty, equals 'Nazwisko i imiÃª', equals '-', or equals '0'
+        If Name = "" Or Name = "Nazwisko i imiÃª" Or Name = "-" Or Name = "0" Then
             GoTo NextRowUnique
         End If
 
