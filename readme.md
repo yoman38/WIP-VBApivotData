@@ -51,8 +51,6 @@ Contained within the Employee Shift Data Processor is the potent "Excel to SQL C
 
 #### Usage Instructions
 
-**Latest Release: Enhanced Usability**
-
 1. **Installation**: Download the `.xlsm` file.
 
 2. **Run the Main Procedure**:
@@ -103,6 +101,9 @@ Contained within the Employee Shift Data Processor is the potent "Excel to SQL C
 
 ## Changelog
 
+### v2 and before
+- Bas files, not linked to a button in a xlsm workbook.
+
 ### v3
 - Resolved an issue causing merged values between runs when the workbook wasn't closed.
 - Enhanced selection range for improved accuracy and reliability.
@@ -152,6 +153,9 @@ Contained within the Employee Shift Data Processor is the potent "Excel to SQL C
 - Sub CheckForEmptyCells(srcWorkbook As Workbook) now saves a txt file in downloads instead of opening it.
 - Added back the option to open it.
 - Conflict names added.
+
+#### v3.48
+- Levenshtein function now working. Edited a loop in Sub PivotData (' Check if the month and year for the shift data is the same as the month and year for the day data)
 
 These updates have been integrated into the tool to enhance its functionality, usability, and overall user experience.
 ---
