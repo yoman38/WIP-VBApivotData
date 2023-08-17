@@ -9,6 +9,7 @@ The Employee Shift Data Processor is a versatile tool designed to efficiently pr
 2. **Subroutines**: The tool engages two distinct subroutines, namely `PivotData` and `PivotDataUnique`, utilizing user-provided input.
 
 3. **Empty Cell Check**: After processing, the tool meticulously inspects the created sheets for any empty cells, promptly alerting users if any are found.
+![Zrzut ekranu 2023-08-17 090447](https://github.com/yoman38/WIP-VBApivotData/assets/124726056/695e4489-85d4-483d-a273-96685040a6ea)
 
 ### Functions
 
